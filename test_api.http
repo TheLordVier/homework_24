@@ -1,0 +1,163 @@
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "filter",
+            "value": "POST"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "filter",
+            "value": "POST"
+        },
+        {
+            "cmd": "map",
+            "value": "0"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "filter",
+            "value": "POST"
+        },
+        {
+            "cmd": "map",
+            "value": "0"
+        },
+        {
+            "cmd": "unique",
+            "value": ""
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "filter",
+            "value": "POST"
+        },
+        {
+            "cmd": "map",
+            "value": "0"
+        },
+        {
+            "cmd": "unique",
+            "value": ""
+        },
+        {
+            "cmd": "limit",
+            "value": "2"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "filter",
+            "value": "POST"
+        },
+        {
+            "cmd": "map",
+            "value": "0"
+        },
+        {
+            "cmd": "unique",
+            "value": ""
+        },
+        {
+            "cmd": "limit",
+            "value": "3"
+        },
+        {
+            "cmd": "sort",
+            "value": "desc"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "regex",
+            "value": "images\/\\w+\\.png"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
+###
+
+POST http://127.0.0.1:5000/perform_query
+Accept: application/json
+Content-Type: application/json
+
+{
+    "queries": [
+        {
+            "cmd": "regex",
+            "value": "images\/\\w+\\.png"
+        },
+        {
+            "cmd": "unique",
+            "value": ""
+        },
+        {
+            "cmd": "limit",
+            "value": "6"
+        },
+        {
+            "cmd": "sort",
+            "value": "asc"
+        }
+    ],
+    "file_name": "data/apache_logs.txt"
+}
+
